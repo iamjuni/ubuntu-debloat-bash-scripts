@@ -11,7 +11,7 @@ sudo systemctl disable snapd
 
 # Uninstall snapd package
 echo "Purging snapd..."
-sudo apt purge -y snapd
+sudo apt purge -y --allow-downgrades snapd
 
 # Clean up snap-related directories
 echo "Removing snap-related directories..."
